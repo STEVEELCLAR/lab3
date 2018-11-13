@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<form class="form-horizontal" action="{{ url_for('upd_fname') }}" method = "post">
+<fieldset>
+<!-- Form Name -->
+<legend>UPDATE Student</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="fname">First Name:</label>  
+  <input id="fname" name="fname" type="text" placeholder="e.g. Steve" class="form-control input-md" required="">
+
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="newfname">New First Name:</label>  
+  <input id="newfname" name="newfname" type="text" placeholder="e.g. Steve El" class="form-control input-md" required="">
+
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+ 
+</div>
+
+</fieldset>
+</form>
+{% endblock content %}
+

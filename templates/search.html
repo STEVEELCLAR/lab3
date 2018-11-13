@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<form class="form-horizontal" action="{{ url_for('search') }}" method = "post">
+<fieldset>
+<!-- Form Name -->
+<legend>SEARCH</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="id"></label>  
+  <input id="info" name="info" type="text" class="form-control input-md" required="">
+
+</div>
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+ 
+</div>
+
+</fieldset>
+</form>
+{% endblock content %}
+

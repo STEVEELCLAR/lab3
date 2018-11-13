@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<form class="form-horizontal" action="{{ url_for('upd_year') }}" method = "post">
+<fieldset>
+<!-- Form Name -->
+<legend>UPDATE Student</legend>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="year">Year Level:</label>
+
+    <select id="year" name="year" class="form-control">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="year">New Year Level:</label>
+
+    <select id="newyear" name="newyear" class="form-control">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+ 
+</div>
+
+</fieldset>
+</form>
+{% endblock content %}

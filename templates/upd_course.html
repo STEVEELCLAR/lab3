@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<form class="form-horizontal" action="{{ url_for('upd_course') }}" method = "post">
+<fieldset>
+<!-- Form Name -->
+<legend>UPDATE Student</legend>
+
+
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="course">Course:</label>
+
+    <select id="course" name="course" class="form-control">
+      <option value="1">BS Accountancy</option>
+      <option value="2">BS Biology</option>
+      <option value="3">BS Chemistry</option>
+      <option value="4">BS Civil Engineering</option>
+      <option value="5">BS Computer Engineering</option>
+      <option value="6">BS Computer Science</option>
+      <option value="7">BSED Drafting</option>
+      <option value="8">BS Economics</option>
+      <option value="9">BS Electronics Engineering</option>
+      <option value="10">AB Filipino</option>
+      <option value="11">AB History</option>
+      <option value="12">BS Information Technology</option>
+      <option value="13">BS Information System</option>
+      <option value="14">BS Mechanical Engineering</option>
+      <option value="15">BS Mining Engineering</option>
+      <option value="16">BS Nursing</option>
+      <option value="17">BS Physics</option>
+      <option value="18">AB Political Science</option>
+      <option value="19">AB Sociology</option>
+      <option value="20">BS Statistics</option>
+
+    </select>
+</div>>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="newcourse">New Course:</label>
+
+    <select id="newcourse" name="newcourse" class="form-control">
+      <option value="1">BS Accountancy</option>
+      <option value="2">BS Biology</option>
+      <option value="3">BS Chemistry</option>
+      <option value="4">BS Civil Engineering</option>
+      <option value="5">BS Computer Engineering</option>
+      <option value="6">BS Computer Science</option>
+      <option value="7">BSED Drafting</option>
+      <option value="8">BS Economics</option>
+      <option value="9">BS Electronics Engineering</option>
+      <option value="10">AB Filipino</option>
+      <option value="11">AB History</option>
+      <option value="12">BS Information Technology</option>
+      <option value="13">BS Information System</option>
+      <option value="14">BS Mechanical Engineering</option>
+      <option value="15">BS Mining Engineering</option>
+      <option value="16">BS Nursing</option>
+      <option value="17">BS Physics</option>
+      <option value="18">AB Political Science</option>
+      <option value="19">AB Sociology</option>
+      <option value="20">BS Statistics</option>
+
+    </select>
+</div>
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+</div>
+
+</fieldset>
+</form>
+{% endblock content %}

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<form class="form-horizontal" action="{{ url_for('del_lname') }}" method = "post">
+<fieldset>
+<!-- Form Name -->
+<legend>DELETE Student</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="lname">Last Name:</label>  
+  <input id="lname" name="lname" type="text" placeholder="e.g. Clar" class="form-control input-md" required="">
+    
+
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+ 
+</div>
+
+</fieldset>
+</form>
+{% endblock content %}
